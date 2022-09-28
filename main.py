@@ -1,7 +1,7 @@
 from network import Network
 
 def get_data(data: list,number: int) -> None:
-    with open(str(number) + ".data") as f:
+    with open("data/" + str(number) + ".data") as f:
         for nums in f:
             data.append(list(map(float, nums.split(' '))))
 
